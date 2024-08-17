@@ -279,8 +279,8 @@ run_command('ln', '-fsT', meson.project_source_root(), meson.project_build_root(
 configure_file(output : 'config.h', configuration : config_h)
 
 # Check for python installation and modules.
-py_mod = import('python')
-py_mod.find_installation('python3', modules : py_modules)
+# py_mod = import('python')
+# py_mod.find_installation('python3', modules : py_modules)
 
 ## Summarise Configurations
 summary({
